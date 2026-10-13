@@ -1,0 +1,211 @@
+/* Custom styles for Orpheus Lau Portfolio */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0b0c0e;
+  color: #d4d4d8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-serif-display {
+  font-family: var(--font-serif);
+}
+
+.font-mono-code {
+  font-family: var(--font-mono);
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #0f1013;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Subtle grid backdrop */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+}
+
+/* Modal and backdrop animations */
+.modal-backdrop-enter {
+  opacity: 0;
+  backdrop-filter: blur(0px);
+}
+.modal-backdrop-active {
+  opacity: 1;
+  backdrop-filter: blur(12px);
+  transition: opacity 0.25s ease-out, backdrop-filter 0.25s ease-out;
+}
+.modal-panel-enter {
+  opacity: 0;
+  transform: translateY(20px) scale(0.98);
+}
+.modal-panel-active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Glass surface effect */
+.glass-panel {
+  background: rgba(18, 19, 23, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-card {
+  background: rgba(18, 19, 23, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: border-color 0.25s ease, transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(244, 98, 58, 0.35);
+  background: rgba(24, 25, 30, 0.85);
+  box-shadow: 0 10px 30px -10px rgba(249, 115, 22, 0.12);
+}
+
+/* Code block highlight */
+pre code {
+  font-family: var(--font-mono);
+  font-size: 0.84rem;
+  line-height: 1.65;
+}
+
+/* Hero 3D Stage Styles */
+#hero-3d-canvas-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 440px;
+  touch-action: none;
+  user-select: none;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+#hero-3d-canvas-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+  outline: none;
+}
+
+/* 3D Floating Pill Controls */
+.hero-3d-control-pill {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(18, 19, 23, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #a1a1aa;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.hero-3d-control-pill:hover {
+  background: rgba(39, 39, 42, 0.9);
+  color: #f4f4f5;
+  border-color: rgba(249, 115, 22, 0.5);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.15);
+}
+
+.hero-3d-control-pill:active {
+  transform: translateY(0);
+}
+
+/* Hologram Aura Pulse */
+@keyframes auraPulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.08);
+  }
+}
+
+.aura-glow {
+  animation: auraPulse 6s ease-in-out infinite;
+}
+
+/* Scroll progress bar */
+#scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #f97316, #fb923c, #38bdf8);
+  z-index: 100;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+/* Modern Card Spotlight Hover Effect */
+.spotlight-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.spotlight-card::before {
+  content: '';
+  position: absolute;
+  top: var(--mouse-y, -1000px);
+  left: var(--mouse-x, -1000px);
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.15) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.spotlight-card:hover::before {
+  opacity: 1;
+}
+
+/* Accessibility: respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .aura-glow {
+    animation: none !important;
+  }
+}
+

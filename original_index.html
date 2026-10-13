@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orpheus Lau — Creative Technologist & AI Systems Engineer</title>
+  <meta name="description"
+    content="Portfolio of Orpheus Lau. Engineering at the intersection of AI, Cybersecurity, Computer Vision, and Social Impact with 20+ years of sector leadership.">
+  <meta property="og:title" content="Orpheus Lau — Creative Technologist & AI Systems Engineer">
+  <meta property="og:description"
+    content="Engineering solutions at the intersection of AI, Cybersecurity, and Social Impact. 20+ years translating human needs into resilient software.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/icons8-o-67.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fff7ed',
+              100: '#ffedd5',
+              400: '#fb923c',
+              500: '#f97316',
+              600: '#ea580c',
+              accent: '#f4623a'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Typography & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Styling -->
+  <link rel="stylesheet" href="css/styles8.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SVWP2YHJN5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-SVWP2YHJN5');
+  </script>
+</head>
+
+<body class="bg-[#0b0c0e] text-zinc-300 min-h-screen selection:bg-orange-500/30 selection:text-orange-200">
+
+  <!-- Top Glass Navigation Bar -->
+  <header>
+    <nav id="mainNav" class="fixed w-full z-40 top-0 transition-all duration-300 border-b border-transparent">
+      <div class="max-w-7xl mx-auto px-6 sm:px-8 py-4 sm:py-5">
+        <div class="flex items-center justify-between">
+
+          <!-- Moniker / Brand Mark -->
+          <a href="#hero"
+            class="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 rounded-lg">
+            <span
+              class="w-8 h-8 rounded-lg bg-gradient-to-br from-orange-500 to-amber-600 flex items-center justify-center font-bold text-white shadow-md shadow-orange-950/40 group-hover:scale-105 transition-transform text-sm font-mono">
+              OL
+            </span>
+            <div class="flex flex-col">
+              <span
+                class="text-sm font-semibold tracking-tight text-zinc-100 group-hover:text-orange-400 transition-colors">
+                ORPHEUS LAU
+              </span>
+              <span class="text-[11px] font-mono text-zinc-400">
+                AI &amp; Social Tech Architect
+              </span>
+            </div>
+          </a>
+
+          <!-- Desktop Navigation Menu -->
+          <div class="hidden md:flex items-center gap-8 text-xs font-medium tracking-wide">
+            <a href="#about" class="text-zinc-400 hover:text-zinc-100 transition-colors">About</a>
+            <a href="#experience" class="text-zinc-400 hover:text-zinc-100 transition-colors">Experience</a>
+            <a href="#works" class="text-zinc-400 hover:text-zinc-100 transition-colors">Selected Works</a>
+            <a href="#archive" class="text-zinc-400 hover:text-zinc-100 transition-colors">Code &amp; Deliverables</a>
+            <a href="#education" class="text-zinc-400 hover:text-zinc-100 transition-colors">Credentials</a>
+            <a href="#contact" class="text-zinc-400 hover:text-zinc-100 transition-colors">Contact</a>
+          </div>
+
+          <!-- Quick Action CTA -->
+          <div class="hidden md:flex items-center gap-4">
+            <a href="mailto:orpheuslau@gmail.com"
+              class="inline-flex items-center gap-2 text-xs font-semibold px-4 py-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-zinc-200 border border-zinc-700/60 transition-all hover:border-zinc-500">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span>Available for Advisory</span>
+            </a>
+          </div>
+
+          <!-- Mobile Hamburger Toggle -->
+          <div class="md:hidden flex items-center">
+            <button id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
+              class="p-2 text-zinc-400 hover:text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+              <i class="fas fa-bars text-lg"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden md:hidden pt-4 pb-3 border-t border-zinc-800/80 mt-3 space-y-2">
+          <a href="#about" class="block py-2 text-sm text-zinc-400 hover:text-white">About &amp; Philosophy</a>
+          <a href="#experience" class="block py-2 text-sm text-zinc-400 hover:text-white">Leadership Experience</a>
+          <a href="#works" class="block py-2 text-sm text-zinc-400 hover:text-white">Selected Works</a>
+          <a href="#archive" class="block py-2 text-sm text-zinc-400 hover:text-white">Code &amp; Deliverables</a>
+          <a href="#education" class="block py-2 text-sm text-zinc-400 hover:text-white">Credentials &amp; Education</a>
+          <a href="#contact" class="block py-2 text-sm text-zinc-400 hover:text-white">Contact &amp; Connect</a>
+          <div class="pt-3">
+            <a href="mailto:orpheuslau@gmail.com"
+              class="w-full inline-flex items-center justify-center gap-2 text-xs font-semibold px-4 py-2.5 rounded-lg bg-orange-600 text-white">
+              <i class="fas fa-envelope"></i> orpheuslau@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero"
+      class="relative min-h-[90vh] flex items-center justify-center pt-28 pb-20 px-6 sm:px-8 overflow-hidden bg-grid-pattern">
+      <!-- Ambient Radial Backlights -->
+      <div
+        class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-orange-600/10 rounded-full blur-[120px] pointer-events-none">
+      </div>
+      <div
+        class="absolute bottom-10 right-10 w-[400px] h-[250px] bg-amber-500/5 rounded-full blur-[100px] pointer-events-none">
+      </div>
+
+      <div class="max-w-5xl mx-auto text-center relative z-10">
+
+        <!-- Status Indicator / Tagline (Unboxed, clean) -->
+        <div class="inline-flex items-center gap-2 text-xs font-mono text-zinc-400 mb-6">
+          <span class="w-2 h-2 rounded-full bg-orange-500"></span>
+          <span>ARTIFICIAL INTELLIGENCE · CYBERSECURITY · SOCIAL IMPACT</span>
+          <span class="hidden sm:inline">·</span>
+          <span class="hidden sm:inline text-zinc-400">20+ YEARS SECTOR LEADERSHIP</span>
+        </div>
+
+        <!-- Editorial Headline with Serif Elegance -->
+        <h1
+          class="text-4xl sm:text-6xl lg:text-7xl font-light text-zinc-100 tracking-tight leading-[1.1] mb-8 font-serif-display">
+          Building <span class="italic text-zinc-200">intelligence</span> at the edge of human impact.
+        </h1>
+
+        <!-- Subheading Paragraph -->
+        <p class="text-base sm:text-lg lg:text-xl text-zinc-400 max-w-3xl mx-auto leading-relaxed font-normal mb-10">
+          I engineer production-grade AI systems, edge computer vision pipelines, and cryptographic mobile
+          applications—translating complex human service needs into resilient, privacy-preserving technology.
+        </p>
+
+        <!-- Technical Ticker (Unboxed metadata style) -->
+        <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-mono text-zinc-400 mb-12">
+          <span>Multi-Agent &amp; Deterministic Routing</span>
+          <span class="text-zinc-700">/</span>
+          <span>Hybrid RAG &amp; BigQuery Vector</span>
+          <span class="text-zinc-700">/</span>
+          <span>Archival RAG &amp; Curatorial Guardrails</span>
+          <span class="text-zinc-700">/</span>
+          <span>Dual-LLM Consensus</span>
+          <span class="text-zinc-700">/</span>
+          <span>LoRA on Apple MLX</span>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <a href="#works"
+            class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-orange-600 hover:bg-orange-500 text-white font-semibold text-xs tracking-wider uppercase transition-all shadow-lg shadow-orange-950/40 hover:-translate-y-0.5">
+            <span>Explore Selected Works</span>
+            <i class="fas fa-arrow-down text-xs"></i>
+          </a>
+          <a href="#about"
+            class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-zinc-300 hover:text-white font-semibold text-xs tracking-wider uppercase border border-zinc-700/60 transition-all hover:border-zinc-500 hover:-translate-y-0.5">
+            <span>Read Leadership Profile</span>
+            <i class="fas fa-user text-xs text-zinc-500"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 01: ABOUT & LEADERSHIP NARRATIVE -->
+    <section id="about" class="py-24 px-6 sm:px-8 border-t border-zinc-800/80 relative">
+      <div class="max-w-6xl mx-auto">
+
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div>
+            <div class="text-xs font-mono text-orange-400 uppercase tracking-widest mb-2">
+              01 // Background &amp; Philosophy
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-light text-zinc-100 font-serif-display tracking-tight">
+              Bridging computing rigor with <span class="italic">human welfare</span>.
+            </h2>
+          </div>
+          <p class="text-xs font-mono text-zinc-400 max-w-sm">
+            Two decades spent deploying frontline digital transformations for 4,000+ staff and diverse community
+            cohorts.
+          </p>
+        </div>
+
+        <!-- Narrative & Core Competencies Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+
+          <!-- Narrative Prose (7 Cols) -->
+          <div class="lg:col-span-7 space-y-6 text-base text-zinc-300 leading-relaxed">
+            <p>
+              I am a technology leader with over twenty years of deep, dedicated experience across the social services
+              sector. My career is defined by a unique dual foundation: holding formal degrees in both <strong
+                class="text-white font-medium">Computing Science (1st Class Honours)</strong> and <strong
+                class="text-white font-medium">Social Work and Social Sciences (mgt)</strong> from universities in Hong
+              Kong and UK. Over the years, I have architected and deployed enterprise case information systems,
+              biometric credential managers, augmented reality platforms, and high-throughput computer vision
+              workstations.
+            </p>
+            <p class="text-zinc-400">
+              Rather than pursuing innovation in a vacuum, I specialize in translating high-stakes human challenges into
+              production-grade AI solutions. Currently pursuing a <strong class="text-zinc-200 font-medium">Master in
+                Artificial Intelligence at the University of Leeds</strong>, my technical focus centers on <button
+                onclick="openCaseStudy('linkyouin')"
+                class="text-zinc-200 font-medium hover:text-orange-400 underline decoration-zinc-700 underline-offset-2 transition-colors cursor-pointer">LinkYouIn</button>
+              (a privacy-preserving dual-LLM candidate screening engine with zero PII leakage), <button
+                onclick="openCaseStudy('dse-bot')"
+                class="text-zinc-200 font-medium hover:text-orange-400 underline decoration-zinc-700 underline-offset-2 transition-colors cursor-pointer">DSE
+                Bot</button> (a multi-agent system decoupling exact JUPAS admission score math from empathetic Cantonese
+              counseling), the <button onclick="openCaseStudy('lsg-navigator')"
+                class="text-zinc-200 font-medium hover:text-orange-400 underline decoration-zinc-700 underline-offset-2 transition-colors cursor-pointer">Caritas
+                LSG &amp; LF AI Navigator</button> (an enterprise hybrid RAG engine delivering clause-grounded statutory
+              guidance across complex welfare funding manuals), and the <button
+                onclick="openCaseStudy('messengers-of-hope')"
+                class="text-zinc-200 font-medium hover:text-orange-400 underline decoration-zinc-700 underline-offset-2 transition-colors cursor-pointer">Historical
+                exhibition of the Catholic Diocese of HK</button> (an archival RAG interactive docent serving eight
+              decades of heritage with multilingual kiosk narration and strict curatorial guardrails).
+            </p>
+
+            <!-- Key Architectural Principles -->
+            <div class="pt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="p-5 rounded-xl bg-zinc-900/50 border border-zinc-800/80">
+                <div class="text-xs font-mono text-orange-400 mb-1">01. PRIVACY AT THE PERIMETER</div>
+                <p class="text-xs text-zinc-400 leading-relaxed">
+                  Strict zero-PII cloud egress. Sensitive beneficiary records and candidate evaluations are processed
+                  strictly on local hardware or client devices.
+                </p>
+              </div>
+              <div class="p-5 rounded-xl bg-zinc-900/50 border border-zinc-800/80">
+                <div class="text-xs font-mono text-orange-400 mb-1">02. SOCIAL MISSION EQUALITY</div>
+                <p class="text-xs text-zinc-400 leading-relaxed">
+                  Harnessing frontier models to actively bridge the digital divide for low-income families and
+                  non-profit operations rather than commercial lock-in.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic & Credentials Stack (5 Cols) -->
+          <div id="education"
+            class="lg:col-span-5 p-6 sm:p-7 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 space-y-6">
+            <div class="flex items-center justify-between border-b border-zinc-800/80 pb-4">
+              <h3 class="text-sm font-semibold tracking-wide text-zinc-100 uppercase font-mono">
+                Academic Credentials
+              </h3>
+              <span class="text-xs text-orange-400 font-mono">Continuous Mastery</span>
+            </div>
+
+            <ul class="space-y-4 text-xs">
+              <li class="flex items-start gap-3">
+                <span class="text-orange-400 mt-0.5"><i class="fas fa-graduation-cap"></i></span>
+                <div>
+                  <div class="font-semibold text-zinc-200">Master in Artificial Intelligence</div>
+                  <div class="text-zinc-400">University of Leeds (Ongoing, 2027)</div>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-orange-400 mt-0.5"><i class="fas fa-award"></i></span>
+                <div>
+                  <div class="font-semibold text-zinc-200">Bachelor of Computing Science (1st Class Hon)</div>
+                  <div class="text-zinc-400">University of Greenwich</div>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-orange-400 mt-0.5"><i class="fab fa-google"></i></span>
+                <div>
+                  <div class="font-semibold text-zinc-200">Google Data Analytics Professional Certificate</div>
+                  <div class="text-zinc-400">Google Professional Accreditation</div>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-orange-400 mt-0.5"><i class="fas fa-graduation-cap"></i></span>
+                <div>
+                  <div class="font-semibold text-zinc-200">Master of Social Sciences (Management)</div>
+                  <div class="text-zinc-400">The University of Hong Kong</div>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-orange-400 mt-0.5"><i class="fas fa-certificate"></i></span>
+                <div>
+                  <div class="font-semibold text-zinc-200">Diploma in Information Technology</div>
+                  <div class="text-zinc-400">The University of Hong Kong (SPACE)</div>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-orange-400 mt-0.5"><i class="fas fa-graduation-cap"></i></span>
+                <div>
+                  <div class="font-semibold text-zinc-200">Bachelor of Social Work (Honours)</div>
+                  <div class="text-zinc-400">The University of Hong Kong</div>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Core Skill Matrix Badges (Clean text style) -->
+            <div class="pt-4 border-t border-zinc-800/80">
+              <div class="text-[11px] font-mono text-zinc-400 mb-2">DOMAINS OF SPECIALIZATION</div>
+              <div class="text-xs text-zinc-400 space-y-1 font-mono">
+                <div>· Machine Learning: PyTorch, MLX, LoRA, YOLOv10, Ollama</div>
+                <div>· Mobile &amp; Edge: Swift, SwiftUI, SwiftData, HealthKit, ARKit</div>
+                <div>· Web &amp; Backend: Python FastAPI, Node.js, React, MongoDB</div>
+                <div>· Security: Biometrics, Swift Crypto, Role-Based Access</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Professional Leadership & Sector Experience -->
+        <div id="experience" class="mt-16 pt-12 border-t border-zinc-800/80">
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+            <div>
+              <div class="text-xs font-mono text-orange-400 uppercase tracking-widest mb-1.5">
+                Career Trajectory // 2001 – Present
+              </div>
+              <h3 class="text-2xl sm:text-3xl font-light text-zinc-100 font-serif-display tracking-tight">
+                Professional Leadership &amp; <span class="italic">Sector Experience</span>
+              </h3>
+            </div>
+            <p class="text-xs font-mono text-zinc-400 max-w-md">
+              Over two decades bridging frontline social welfare governance, institutional service development, and
+              technological modernization across Hong Kong.
+            </p>
+          </div>
+
+          <!-- Experience Cards Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+
+            <!-- 01: Caritas Hong Kong -->
+            <div
+              class="p-5 rounded-2xl bg-zinc-900/60 border border-orange-500/40 hover:border-orange-500/70 transition-all flex flex-col justify-between relative overflow-hidden group shadow-lg shadow-orange-950/20">
+              <div
+                class="absolute -top-10 -right-10 w-28 h-28 bg-orange-500/10 rounded-full blur-2xl pointer-events-none">
+              </div>
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-2.5">
+                  <span class="text-xs font-mono text-orange-400 font-semibold">Aug 2020 – Present</span>
+                  <span
+                    class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Current
+                  </span>
+                </div>
+                <h4
+                  class="text-sm font-semibold text-zinc-100 group-hover:text-orange-300 transition-colors leading-snug">
+                  Head of Service Development
+                </h4>
+                <div class="text-xs text-zinc-300 font-medium mt-1">Caritas Hong Kong</div>
+                <div class="text-[11px] text-zinc-400 font-mono mt-0.5">Full-time</div>
+              </div>
+              <div class="pt-3.5 mt-3.5 border-t border-zinc-800/80 text-[11px] text-zinc-400 font-mono">
+                Strategic service innovation &amp; digital modernization
+              </div>
+            </div>
+
+            <!-- 02: HHCKLA -->
+            <div
+              class="p-5 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 hover:border-zinc-700 transition-all flex flex-col justify-between group">
+              <div>
+                <div class="text-xs font-mono text-zinc-400 mb-2.5 font-medium">2018 – 2020</div>
+                <h4
+                  class="text-sm font-semibold text-zinc-100 group-hover:text-zinc-200 transition-colors leading-snug">
+                  Assistant Director (Elderly service)
+                </h4>
+                <div class="text-xs text-zinc-300 font-medium mt-1">HHCKLA</div>
+                <div class="text-[11px] text-zinc-400 font-mono mt-0.5">Full-time</div>
+              </div>
+              <div class="pt-3.5 mt-3.5 border-t border-zinc-800/80 text-[11px] text-zinc-400 font-mono">
+                Elderly service oversight &amp; assistive technology
+              </div>
+            </div>
+
+            <!-- 03: CFSC -->
+            <div
+              class="p-5 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 hover:border-zinc-700 transition-all flex flex-col justify-between group">
+              <div>
+                <div class="text-xs font-mono text-zinc-400 mb-2.5 font-medium">2015 – 2018</div>
+                <h4
+                  class="text-sm font-semibold text-zinc-100 group-hover:text-zinc-200 transition-colors leading-snug">
+                  Senior Manager (Development)
+                </h4>
+                <div class="text-xs text-zinc-300 font-medium mt-1">Christian Family Service Centre</div>
+                <div class="text-[11px] text-zinc-400 font-mono mt-0.5">Full-time</div>
+              </div>
+              <div class="pt-3.5 mt-3.5 border-t border-zinc-800/80 text-[11px] text-zinc-400 font-mono">
+                Organizational development &amp; service delivery
+              </div>
+            </div>
+
+            <!-- 04: SAGE -->
+            <div
+              class="p-5 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 hover:border-zinc-700 transition-all flex flex-col justify-between group">
+              <div>
+                <div class="text-xs font-mono text-zinc-400 mb-2.5 font-medium">2006 – 2012</div>
+                <h4
+                  class="text-sm font-semibold text-zinc-100 group-hover:text-zinc-200 transition-colors leading-snug">
+                  Service Coordinator
+                </h4>
+                <div class="text-xs text-zinc-300 font-medium mt-1">Hong Kong Society for the Aged</div>
+                <div class="text-[11px] text-zinc-400 font-mono mt-0.5">Tsuen Kwai Tsing region</div>
+              </div>
+              <div class="pt-3.5 mt-3.5 border-t border-zinc-800/80 text-[11px] text-zinc-400 font-mono">
+                Regional service coordination &amp; community networks
+              </div>
+            </div>
+
+            <!-- 05: IVE -->
+            <div
+              class="p-5 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 hover:border-zinc-700 transition-all flex flex-col justify-between group">
+              <div>
+                <div class="text-xs font-mono text-zinc-400 mb-2.5 font-medium">2001 – 2006</div>
+                <h4
+                  class="text-sm font-semibold text-zinc-100 group-hover:text-zinc-200 transition-colors leading-snug">
+                  Student Counselor
+                </h4>
+                <div class="text-xs text-zinc-300 font-medium mt-1">The Hong Kong Institute of Vocational Education
+                </div>
+                <div class="text-[11px] text-zinc-400 font-mono mt-0.5">Full-time</div>
+              </div>
+              <div class="pt-3.5 mt-3.5 border-t border-zinc-800/80 text-[11px] text-zinc-400 font-mono">
+                Vocational tertiary student guidance &amp; counseling
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: SELECTED WORKS / PORTFOLIO -->
+    <section id="works" class="py-24 px-6 sm:px-8 border-t border-zinc-800/80 bg-zinc-950/40">
+      <div class="max-w-6xl mx-auto">
+
+        <!-- Section Header & Filter Controls -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+          <div>
+            <div class="text-xs font-mono text-orange-400 uppercase tracking-widest mb-2">
+              02 // Selected Works &amp; Case Studies
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-light text-zinc-100 font-serif-display tracking-tight">
+              Engineered systems, <span class="italic">deployed in production</span>.
+            </h2>
+          </div>
+
+          <!-- Segmented Filter Tabs (Buttons allowed under anti-slop guidelines) -->
+          <div
+            class="inline-flex p-1 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-medium self-start md:self-auto overflow-x-auto max-w-full">
+            <button data-filter="all"
+              class="filter-tab-btn px-3.5 py-1.5 rounded-lg bg-zinc-800 text-white shadow-sm transition-all whitespace-nowrap">
+              All Works
+            </button>
+            <button data-filter="ai"
+              class="filter-tab-btn px-3.5 py-1.5 rounded-lg text-zinc-400 hover:text-zinc-200 transition-all whitespace-nowrap">
+              AI &amp; LLMs
+            </button>
+            <button data-filter="vision"
+              class="filter-tab-btn px-3.5 py-1.5 rounded-lg text-zinc-400 hover:text-zinc-200 transition-all whitespace-nowrap">
+              Computer Vision
+            </button>
+            <button data-filter="mobile"
+              class="filter-tab-btn px-3.5 py-1.5 rounded-lg text-zinc-400 hover:text-zinc-200 transition-all whitespace-nowrap">
+              iOS &amp; Security
+            </button>
+            <button data-filter="fullstack"
+              class="filter-tab-btn px-3.5 py-1.5 rounded-lg text-zinc-400 hover:text-zinc-200 transition-all whitespace-nowrap">
+              Full-Stack &amp; AR
+            </button>
+          </div>
+        </div>
+
+        <!-- Dynamic Projects Grid -->
+        <div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <!-- Populated dynamically by scripts8.js -->
+        </div>
+
+        <!-- Interactive Case Study Modal Hint -->
+        <div class="mt-12 text-center text-xs font-mono text-zinc-400">
+          Click any case study to inspect technical challenges, pipeline architecture, sample code, and live demo links.
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: TECHNICAL REPOSITORY & DELIVERABLES ARCHIVE -->
+    <section id="archive" class="py-24 px-6 sm:px-8 border-t border-zinc-800/80">
+      <div class="max-w-6xl mx-auto">
+
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
+          <div>
+            <div class="text-xs font-mono text-orange-400 uppercase tracking-widest mb-2">
+              03 // Code &amp; Deliverables Registry
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-light text-zinc-100 font-serif-display tracking-tight">
+              Master repository &amp; <span class="italic">artifact directory</span>.
+            </h2>
+          </div>
+
+          <!-- Quick Search Filter -->
+          <div class="w-full sm:w-64">
+            <div class="relative">
+              <i class="fas fa-search absolute left-3.5 top-1/2 -translate-y-1/2 text-xs text-zinc-500"></i>
+              <input type="text" placeholder="Filter by keyword..." oninput="filterArchiveTable(this.value)"
+                class="w-full bg-zinc-900 border border-zinc-800 rounded-xl pl-9 pr-4 py-2 text-xs text-zinc-200 placeholder-zinc-500 focus:outline-none focus:border-orange-500" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Master Deliverables Table -->
+        <div class="overflow-x-auto rounded-2xl border border-zinc-800/80 bg-zinc-900/30">
+          <table class="w-full text-xs text-left border-collapse">
+            <thead>
+              <tr
+                class="border-b border-zinc-800/80 bg-zinc-900/80 text-zinc-400 font-mono uppercase tracking-wider text-[11px]">
+                <th class="py-4 px-6">Project Name</th>
+                <th class="py-4 px-6">Domain &amp; Tech Stack</th>
+                <th class="py-4 px-6">Year</th>
+                <th class="py-4 px-6 text-center">Repository</th>
+                <th class="py-4 px-6 text-right">Production Artifacts</th>
+              </tr>
+            </thead>
+            <tbody id="archiveTableBody" class="divide-y divide-zinc-800/60 font-sans">
+
+              <!-- DSE Bot -->
+              <tr class="hover:bg-zinc-800/30 transition-colors">
+                <td class="py-4 px-6 font-medium text-zinc-100">
+                  <button onclick="openCaseStudy('dse-bot')"
+                    class="hover:text-orange-400 text-left transition-colors font-semibold">
+                    DSE Bot: Multi-Agent Admissions &amp; Counseling
+                  </button>
+                  <div class="text-[11px] text-zinc-400 font-mono mt-0.5">Deterministic JUPAS math + empathetic LLM
+                    guidance</div>
+                </td>
+                <td class="py-4 px-6 text-zinc-400 font-mono">Multi-Agent · Python Engine · Docker · GCP Cloud Run</td>
+                <td class="py-4 px-6 text-zinc-400 font-mono">2026</td>
+                <td class="py-4 px-6 text-center text-zinc-400 font-mono">GCP Serverless</td>
+                <td class="py-4 px-6 text-right">
+                  <button onclick="openCaseStudy('dse-bot')"
+                    class="inline-flex items-center gap-1.5 text-orange-400 hover:text-orange-300 font-medium">
+                    <i class="fas fa-file-lines"></i> <span>Case Study</span>
+                  </button>
+                </td>
+              </tr>
+
+              <!-- LSG & LF AI Policy Navigator -->
+              <tr class="hover:bg-zinc-800/30 transition-colors">
+                <td class="py-4 px-6 font-medium text-zinc-100">
+                  <button onclick="openCaseStudy('lsg-navigator')"
+                    class="hover:text-orange-400 text-left transition-colors font-semibold">
+                    LSG &amp; LF AI Policy Navigator
+                  </button>
+                  <div class="text-[11px] text-zinc-400 font-mono mt-0.5">Hybrid RAG (BM25 + BigQuery Vector) with RRF
+                  </div>
+                </td>
+                <td class="py-4 px-6 text-zinc-400 font-mono">Hybrid RAG · Next.js · Vertex AI · BigQuery · Gemini</td>
+                <td class="py-4 px-6 text-zinc-400 font-mono">2026</td>
+                <td class="py-4 px-6 text-center text-zinc-400 font-mono">Governance Tool</td>
+                <td class="py-4 px-6 text-right">
+                  <button onclick="openCaseStudy('lsg-navigator')"
+                    class="inline-flex items-center gap-1.5 text-orange-400 hover:text-orange-300 font-medium">
+                    <i class="fas fa-file-lines"></i> <span>Case Study</span>
+                  </button>
+                </td>
+              </tr>
+
+              <!-- Diocese 80th Tour Guide -->
+              <tr class="hover:bg-zinc-800/30 transition-colors">
+                <td class="py-4 px-6 font-medium text-zinc-100">
+                  <button onclick="openCaseStudy('messengers-of-hope')"
+                    class="hover:text-orange-400 text-left transition-colors font-semibold">
+                    Historical exhibition of the Catholic Diocese of HK
+                  </button>
+                  <div class="text-[11px] text-zinc-400 font-mono mt-0.5">Archival RAG &amp; multilingual kiosk docent
+                  </div>
+                </td>
+                <td class="py-4 px-6 text-zinc-400 font-mono">Archival RAG · Embeddings · Curatorial Guardrails · Kiosk
+                </td>
+                <td class="py-4 px-6 text-zinc-400 font-mono">2026</td>
+                <td class="py-4 px-6 text-center text-zinc-400 font-mono">Exhibition Kiosk</td>
+                <td class="py-4 px-6 text-right space-x-3">
+                  <a href="https://youtube.com/shorts/IP0l9c_tpdk?si=EFDJNTi2Fjq_oSrn" target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-1.5 text-zinc-300 hover:text-red-400 font-medium transition-colors">
+                    <i class="fab fa-youtube text-red-500"></i> <span>Video</span>
+                  </a>
+                  <button onclick="openCaseStudy('messengers-of-hope')"
+                    class="inline-flex items-center gap-1.5 text-orange-400 hover:text-orange-300 font-medium">
+                    <i class="fas fa-file-lines"></i> <span>Case Study</span>
+                  </button>
+                </td>
+              </tr>
+
+              <!-- LinkYouIn -->
+              <tr class="hover:bg-zinc-800/30 transition-colors">
+                <td class="py-4 px-6 font-medium text-zinc-100">
+                  <button onclick="openCaseStudy('linkyouin')"
+                    class="hover:text-orange-400 text-left transition-colors font-semibold">
+                    LinkYouIn: AI Recruiter
+                  </button>
+                  <div class="text-[11px] text-zinc-400 font-mono mt-0.5">Dual-LLM consensus screening</div>
+                </td>
+                <td class="py-4 px-6 text-zinc-400 font-mono">Python · FastAPI · Ollama · Qwen &amp; Gemma</td>
+                <td class="py-4 px-6 text-zinc-400 font-mono">2025</td>
+                <td class="py-4 px-6 text-center text-zinc-400 font-mono">Private Enterprise</td>
+                <td class="py-4 px-6 text-right">
+                  <a href="https://youtu.be/YS4tOkJmgzQ?si=AqJ7pT0axqP5z0x_" target="_blank"
+                    class="inline-flex items-center gap-1.5 text-orange-400 hover:text-orange-300 font-medium">
+                    <i class="fab fa-youtube"></i> <span>Demo Video</span>
+                  </a>
+                </td>
+              </tr>
+
+              <!-- Sentiment Analysis -->
+              <tr class="hover:bg-zinc-800/30 transition-colors">
+                <td class="py-4 px-6 font-medium text-zinc-100">
+                  <button onclick="openCaseStudy('sentiment')"
+                    class="hover:text-orange-400 text-left transition-colors font-semibold">
+                    Multilingual Sentiment &amp; LoRA
+                  </button>
+                  <div class="text-[11px] text-zinc-400 font-mono mt-0.5">ModernBERT fine-tuning on Apple MLX</div>
+                </td>
+                <td class="py-4 px-6 text-zinc-400 font-mono">Python · ModernBERT · LoRA · MLX (40GB RAM)</td>
+                <td class="py-4 px-6 text-zinc-400 font-mono">2025</td>
+                <td class="py-4 px-6 text-center text-zinc-400 font-mono">Institutional Archive</td>
+                <td class="py-4 px-6 text-right">
+                  <button onclick="openCaseStudy('sentiment')"
+                    class="inline-flex items-center gap-1.5 text-zinc-400 hover:text-zinc-200">
+                    <i class="fas fa-file-lines"></i> <span>Case Study</span>
+                  </button>
+                </td>
+              </tr>
+
+              <!-- NuVision -->
+              <tr class="hover:bg-zinc-800/30 transition-colors">
+                <td class="py-4 px-6 font-medium text-zinc-100">
+                  <button onclick="openCaseStudy('nuvision')"
+                    class="hover:text-orange-400 text-left transition-colors font-semibold">
+                    NuVision: AI Nutrition &amp; Exercise
+                  </button>
+                  <div class="text-[11px] text-zinc-400 font-mono mt-0.5">Vision LM + HealthKit for subdivided flats
+                  </div>
+                </td>
+                <td class="py-4 px-6 text-zinc-400 font-mono">Vision LM · iOS Swift · HealthKit · Android</td>
+                <td class="py-4 px-6 text-zinc-400 font-mono">2025</td>
+                <td class="py-4 px-6 text-center text-zinc-400 font-mono">Non-Profit App</td>
+                <td class="py-4 px-6 text-right space-x-3">
+                  <a href="https://apps.apple.com/tr/app/nuvision/id6746086162" target="_blank"
+                    class="inline-flex items-center gap-1 text-zinc-300 hover:text-white">
+                    <i class="fab fa-apple"></i> <span>App Store</span>
+                  </a>
+                  <a href="https://play.google.com/store/apps/details?id=com.mycrossplatformapp" target="_blank"
+                    class="inline-flex items-center gap-1 text-zinc-300 hover:text-white">
+                    <i class="fab fa-google-play"></i> <span>Android</span>
+                  </a>
+                  <a href="https://youtu.be/4cvz1z18Xy8?si=vFzz6WyID1SacJvQ" target="_blank"
+                    class="inline-flex items-center gap-1 text-orange-400 hover:text-orange-300">
+                    <i class="fab fa-youtube"></i> <span>Demo</span>
+                  </a>
+                </td>
+              </tr>
+
+              <!-- IMeMyMine -->
+              <tr class="hover:bg-zinc-800/30 transition-colors">
+                <td class="py-4 px-6 font-medium text-zinc-100">
+                  <button onclick="openCaseStudy('imemymine')"
+                    class="hover:text-orange-400 text-left transition-colors font-semibold">
+                    IMeMyMine: AI Face Swap App
+                  </button>
+                  <div class="text-[11px] text-zinc-400 font-mono mt-0.5">Convention inclusion portrait engine</div>
+                </td>
+                <td class="py-4 px-6 text-zinc-400 font-mono">PyTorch · SDXL · IP-Adapter · iOS Client</td>
+                <td class="py-4 px-6 text-zinc-400 font-mono">2024</td>
+                <td class="py-4 px-6 text-center">
+                  <a href="https://github.com/tencent-ailab/IP-Adapter/tree/main" target="_blank"
+                    class="text-zinc-400 hover:text-zinc-200 inline-flex items-center gap-1">
+                    <i class="fab fa-github"></i> <span>Reference</span>
+                  </a>
+                </td>
+                <td class="py-4 px-6 text-right">
+                  <a href="https://youtu.be/U5Sx3Rk-iEE?si=l24-UgYKbaMJQn0p" target="_blank"
+                    class="inline-flex items-center gap-1.5 text-orange-400 hover:text-orange-300">
+                    <i class="fab fa-youtube"></i> <span>Walkthrough</span>
+                  </a>
+                </td>
+              </tr>
+
+              <!-- AI Raffle -->
+              <tr class="hover:bg-zinc-800/30 transition-colors">
+                <td class="py-4 px-6 font-medium text-zinc-100">
+                  <button onclick="openCaseStudy('airaffle')"
+                    class="hover:text-orange-400 text-left transition-colors font-semibold">
+                    AI Raffle: Edge Ticket OCR
+                  </button>
+                  <div class="text-[11px] text-zinc-400 font-mono mt-0.5">1,000,000 ticket automated verification</div>
+                </td>
+                <td class="py-4 px-6 text-zinc-400 font-mono">YOLOv10 · OpenCV · Roboflow · RTX 4090</td>
+                <td class="py-4 px-6 text-zinc-400 font-mono">2024</td>
+                <td class="py-4 px-6 text-center text-zinc-400 font-mono">Internal Workstation</td>
+                <td class="py-4 px-6 text-right">
+                  <a href="https://www.youtube.com/watch?v=z1p9N5ivJO8&list=PLapYgavEwJHApfBsrHKFdoraWmGXGC7Mg&index"
+                    target="_blank" class="inline-flex items-center gap-1.5 text-orange-400 hover:text-orange-300">
+                    <i class="fab fa-youtube"></i> <span>Field Test</span>
+                  </a>
+                </td>
+              </tr>
+
+              <!-- Pass Secure -->
+              <tr class="hover:bg-zinc-800/30 transition-colors">
+                <td class="py-4 px-6 font-medium text-zinc-100">
+                  <button onclick="openCaseStudy('passsecure')"
+                    class="hover:text-orange-400 text-left transition-colors font-semibold">
+                    Pass Secure: iOS Vault
+                  </button>
+                  <div class="text-[11px] text-zinc-400 font-mono mt-0.5">Biometric keychain with private CloudKit</div>
+                </td>
+                <td class="py-4 px-6 text-zinc-400 font-mono">SwiftData · CloudKit · LocalAuthentication · SwiftUI</td>
+                <td class="py-4 px-6 text-zinc-400 font-mono">2024</td>
+                <td class="py-4 px-6 text-center">
+                  <a href="https://github.com/orpheuslau/Pass-Secure/tree/main" target="_blank"
+                    class="text-zinc-400 hover:text-zinc-200 inline-flex items-center gap-1">
+                    <i class="fab fa-github"></i> <span>Pass-Secure</span>
+                  </a>
+                </td>
+                <td class="py-4 px-6 text-right">
+                  <a href="https://apps.apple.com/hk/app/pass-secure-password-manager/id6479182542" target="_blank"
+                    class="inline-flex items-center gap-1.5 text-zinc-300 hover:text-white">
+                    <i class="fab fa-apple"></i> <span>App Store</span>
+                  </a>
+                </td>
+              </tr>
+
+              <!-- SMIS -->
+              <tr class="hover:bg-zinc-800/30 transition-colors">
+                <td class="py-4 px-6 font-medium text-zinc-100">
+                  <button onclick="openCaseStudy('smis')"
+                    class="hover:text-orange-400 text-left transition-colors font-semibold">
+                    Student Management System (SMIS)
+                  </button>
+                  <div class="text-[11px] text-zinc-400 font-mono mt-0.5">Full-stack assessment &amp; report suite</div>
+                </td>
+                <td class="py-4 px-6 text-zinc-400 font-mono">React.js · Node.js · Express · MongoDB · JWT</td>
+                <td class="py-4 px-6 text-zinc-400 font-mono">2024</td>
+                <td class="py-4 px-6 text-center">
+                  <a href="https://github.com/orpheuslau/ReactJSfrontend" target="_blank"
+                    class="text-zinc-400 hover:text-zinc-200 inline-flex items-center gap-1">
+                    <i class="fab fa-github"></i> <span>ReactJSfrontend</span>
+                  </a>
+                </td>
+                <td class="py-4 px-6 text-right">
+                  <a href="http://front.orpheuslau.dev/" target="_blank"
+                    class="inline-flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300">
+                    <i class="fas fa-arrow-up-right-from-square"></i> <span>Live Demo</span>
+                  </a>
+                </td>
+              </tr>
+
+              <!-- Caritas AR -->
+              <tr class="hover:bg-zinc-800/30 transition-colors">
+                <td class="py-4 px-6 font-medium text-zinc-100">
+                  <button onclick="openCaseStudy('caritasar')"
+                    class="hover:text-orange-400 text-left transition-colors font-semibold">
+                    Caritas Gallery AR
+                  </button>
+                  <div class="text-[11px] text-zinc-400 font-mono mt-0.5">Spatial anniversary commemorative app</div>
+                </td>
+                <td class="py-4 px-6 text-zinc-400 font-mono">ARKit · SceneKit · Swift · iOS Camera</td>
+                <td class="py-4 px-6 text-zinc-400 font-mono">2023</td>
+                <td class="py-4 px-6 text-center">
+                  <a href="https://github.com/orpheuslau/CaritasGallery_Final" target="_blank"
+                    class="text-zinc-400 hover:text-zinc-200 inline-flex items-center gap-1">
+                    <i class="fab fa-github"></i> <span>Gallery_Final</span>
+                  </a>
+                </td>
+                <td class="py-4 px-6 text-right space-x-3">
+                  <a href="https://apps.apple.com/tr/app/caritas-gallery-ar/id6449176352" target="_blank"
+                    class="inline-flex items-center gap-1 text-zinc-300 hover:text-white">
+                    <i class="fab fa-apple"></i> <span>App Store</span>
+                  </a>
+                  <a href="https://www.instagram.com/caritas70gallery/" target="_blank"
+                    class="inline-flex items-center gap-1 text-pink-400 hover:text-pink-300">
+                    <i class="fab fa-instagram"></i> <span>Insta</span>
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=UA6KdNF0PyE" target="_blank"
+                    class="inline-flex items-center gap-1 text-orange-400 hover:text-orange-300">
+                    <i class="fab fa-youtube"></i> <span>Video</span>
+                  </a>
+                </td>
+              </tr>
+
+              <!-- Rental Finder -->
+              <tr class="hover:bg-zinc-800/30 transition-colors">
+                <td class="py-4 px-6 font-medium text-zinc-100">
+                  <button onclick="openCaseStudy('jquery')"
+                    class="hover:text-orange-400 text-left transition-colors font-semibold">
+                    Rental Apartments Finder
+                  </button>
+                  <div class="text-[11px] text-zinc-400 font-mono mt-0.5">Field worker offline housing database</div>
+                </td>
+                <td class="py-4 px-6 text-zinc-400 font-mono">jQuery · Cordova · Java Android · Web SQL</td>
+                <td class="py-4 px-6 text-zinc-400 font-mono">2021</td>
+                <td class="py-4 px-6 text-center">
+                  <a href="https://github.com/orpheuslau/Jquery_rentalApp" target="_blank"
+                    class="text-zinc-400 hover:text-zinc-200 inline-flex items-center gap-1">
+                    <i class="fab fa-github"></i> <span>rentalApp</span>
+                  </a>
+                </td>
+                <td class="py-4 px-6 text-right">
+                  <a href="assets/JqueryJAVAReport.pdf" target="_blank"
+                    class="inline-flex items-center gap-1.5 text-zinc-300 hover:text-white">
+                    <i class="fas fa-file-pdf text-red-400"></i> <span>IEEE Spec PDF</span>
+                  </a>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Additional Specifications & Whitepapers -->
+        <div
+          class="mt-8 flex flex-wrap items-center justify-between gap-4 p-5 rounded-xl bg-zinc-900/40 border border-zinc-800/80 text-xs">
+          <div class="flex items-center gap-3">
+            <span class="text-zinc-500 font-mono">DOCUMENTATION ARCHIVE:</span>
+            <a href="assets/JqueryJAVAReport.pdf" target="_blank"
+              class="text-zinc-300 hover:text-white inline-flex items-center gap-1.5 font-medium underline underline-offset-4 decoration-zinc-700">
+              <i class="fas fa-file-pdf text-red-400"></i> Software Specification (Jquery/Java)
+            </a>
+            <span class="text-zinc-700">·</span>
+            <a href="assets/rfid.pdf" target="_blank"
+              class="text-zinc-300 hover:text-white inline-flex items-center gap-1.5 font-medium underline underline-offset-4 decoration-zinc-700">
+              <i class="fas fa-file-lines text-blue-400"></i> Asset Register &amp; RFID Report
+            </a>
+          </div>
+          <div class="text-zinc-400 font-mono">
+            All code repositories vetted &amp; archived.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 04: CONTACT & COLLABORATION -->
+    <section id="contact" class="py-24 px-6 sm:px-8 border-t border-zinc-800/80 bg-zinc-950/60 relative">
+      <div class="max-w-4xl mx-auto text-center">
+
+        <div class="text-xs font-mono text-orange-400 uppercase tracking-widest mb-3">
+          04 // Direct Contact &amp; Channels
+        </div>
+
+        <h2 class="text-3xl sm:text-5xl font-light text-zinc-100 font-serif-display tracking-tight mb-6">
+          Let’s architect <span class="italic">meaningful technology</span> together.
+        </h2>
+
+        <p class="text-sm sm:text-base text-zinc-400 max-w-2xl mx-auto leading-relaxed mb-10">
+          Whether you require advisory on local LLM deployment, high-accuracy edge computer vision, or architecting
+          digital solutions for community welfare, my inbox is always open.
+        </p>
+
+        <!-- Direct Email Bar with Copy Action -->
+        <div
+          class="inline-flex flex-col sm:flex-row items-center gap-3 p-2 rounded-2xl bg-zinc-900 border border-zinc-800 shadow-xl mb-12 max-w-full">
+          <a href="mailto:orpheuslau@gmail.com"
+            class="px-5 py-3 text-base sm:text-lg font-mono text-zinc-200 hover:text-orange-400 transition-colors flex items-center gap-2 truncate">
+            <i class="fas fa-envelope text-zinc-500"></i>
+            <span>orpheuslau@gmail.com</span>
+          </a>
+          <button onclick="copyEmailAddress()"
+            class="px-5 py-2.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-xs font-semibold text-zinc-200 transition-colors inline-flex items-center gap-2 w-full sm:w-auto justify-center"
+            title="Copy email to clipboard">
+            <i class="fas fa-copy"></i>
+            <span>Copy Address</span>
+          </button>
+        </div>
+
+        <div id="copyNotice"
+          class="text-xs font-mono text-emerald-400 transition-opacity duration-300 opacity-0 -mt-8 mb-10">
+          ✓ Email address copied to clipboard
+        </div>
+
+        <!-- Social & Professional Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl mx-auto">
+          <a href="https://www.linkedin.com/in/ktklau/" target="_blank" rel="noopener noreferrer"
+            class="p-4 rounded-xl bg-zinc-900/60 hover:bg-zinc-800 border border-zinc-800/80 hover:border-zinc-700 transition-all flex flex-col items-center gap-2 group">
+            <i class="fab fa-linkedin text-xl text-zinc-400 group-hover:text-blue-400 transition-colors"></i>
+            <span class="text-xs font-medium text-zinc-300">LinkedIn</span>
+            <span class="text-[10px] font-mono text-zinc-400">/in/ktklau</span>
+          </a>
+
+          <a href="https://github.com/orpheuslau" target="_blank" rel="noopener noreferrer"
+            class="p-4 rounded-xl bg-zinc-900/60 hover:bg-zinc-800 border border-zinc-800/80 hover:border-zinc-700 transition-all flex flex-col items-center gap-2 group">
+            <i class="fab fa-github text-xl text-zinc-400 group-hover:text-white transition-colors"></i>
+            <span class="text-xs font-medium text-zinc-300">GitHub</span>
+            <span class="text-[10px] font-mono text-zinc-400">@orpheuslau</span>
+          </a>
+
+          <a href="https://twitter.com/orpheuslau" target="_blank" rel="noopener noreferrer"
+            class="p-4 rounded-xl bg-zinc-900/60 hover:bg-zinc-800 border border-zinc-800/80 hover:border-zinc-700 transition-all flex flex-col items-center gap-2 group">
+            <i class="fab fa-x-twitter text-xl text-zinc-400 group-hover:text-white transition-colors"></i>
+            <span class="text-xs font-medium text-zinc-300">Twitter / X</span>
+            <span class="text-[10px] font-mono text-zinc-400">@orpheuslau</span>
+          </a>
+
+          <a href="https://www.instagram.com/caritas70gallery/" target="_blank" rel="noopener noreferrer"
+            class="p-4 rounded-xl bg-zinc-900/60 hover:bg-zinc-800 border border-zinc-800/80 hover:border-zinc-700 transition-all flex flex-col items-center gap-2 group">
+            <i class="fab fa-instagram text-xl text-zinc-400 group-hover:text-pink-400 transition-colors"></i>
+            <span class="text-xs font-medium text-zinc-300">Instagram</span>
+            <span class="text-[10px] font-mono text-zinc-400">Gallery AR</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="py-8 px-6 sm:px-8 border-t border-zinc-800/60 bg-zinc-950 text-xs text-zinc-400 font-mono">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        &copy; <span id="currentYear"></span> Orpheus Lau. Engineered for privacy, resilience &amp; impact.
+      </div>
+      <div class="flex items-center gap-4">
+        <span>Hosted via Node.js on Cloud Run</span>
+        <span>·</span>
+        <a href="#hero" class="hover:text-zinc-200 transition-colors">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CASE STUDY DETAIL MODAL (Full Screen Drawer) -->
+  <div id="caseStudyModal"
+    class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-0 sm:p-6 overflow-y-auto"
+    role="dialog" aria-modal="true" aria-label="Case Study Reader">
+    <div
+      class="relative w-full max-w-4xl bg-[#0f1115] border border-zinc-800 rounded-none sm:rounded-2xl shadow-2xl overflow-hidden min-h-screen sm:min-h-0 sm:max-h-[90vh] flex flex-col my-auto"
+      onclick="event.stopPropagation()">
+      <div id="caseStudyContent" class="overflow-y-auto flex-1">
+        <!-- Content injected dynamically by scripts8.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX IMAGE ZOOM MODAL -->
+  <div id="lightboxModal"
+    class="fixed inset-0 z-50 bg-black/95 backdrop-blur-lg hidden flex flex-col items-center justify-center p-4 cursor-pointer select-none"
+    role="dialog" aria-modal="true">
+    <!-- Top Bar: Counter & Project Title -->
+    <div class="absolute top-4 sm:top-6 left-4 sm:left-6 flex items-center gap-3 z-30"
+      onclick="event.stopPropagation()">
+      <div id="lightboxCounter"
+        class="font-mono text-xs text-zinc-300 bg-zinc-900/90 px-3.5 py-1.5 rounded-full border border-zinc-700/80 shadow-lg">
+        1 / 1
+      </div>
+      <div id="lightboxProjectTitle"
+        class="hidden sm:inline font-mono text-xs text-orange-400 bg-zinc-900/90 px-3.5 py-1.5 rounded-full border border-zinc-700/80 truncate max-w-xs shadow-lg">
+      </div>
+    </div>
+
+    <!-- Close Button -->
+    <button id="lightboxCloseBtn"
+      class="absolute top-4 sm:top-6 right-4 sm:right-6 p-3 rounded-full bg-zinc-900/80 hover:bg-zinc-800 text-zinc-300 hover:text-white border border-zinc-700/80 transition-colors shadow-lg z-30"
+      aria-label="Close zoom preview" title="Close (Esc)">
+      <i class="fas fa-xmark text-lg"></i>
+    </button>
+
+    <!-- Navigation Arrows: Previous & Next -->
+    <button id="lightboxPrevBtn"
+      class="absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 p-3.5 sm:p-4 rounded-full bg-zinc-900/85 hover:bg-zinc-800 text-zinc-300 hover:text-white border border-zinc-700/80 transition-all shadow-2xl hover:scale-110 z-30 focus:outline-none"
+      aria-label="Previous image" title="Previous image (Left Arrow key)"
+      onclick="event.stopPropagation(); prevLightboxImage();">
+      <i class="fas fa-chevron-left text-lg sm:text-2xl"></i>
+    </button>
+
+    <button id="lightboxNextBtn"
+      class="absolute right-2 sm:right-6 top-1/2 -translate-y-1/2 p-3.5 sm:p-4 rounded-full bg-zinc-900/85 hover:bg-zinc-800 text-zinc-300 hover:text-white border border-zinc-700/80 transition-all shadow-2xl hover:scale-110 z-30 focus:outline-none"
+      aria-label="Next image" title="Next image (Right Arrow key)"
+      onclick="event.stopPropagation(); nextLightboxImage();">
+      <i class="fas fa-chevron-right text-lg sm:text-2xl"></i>
+    </button>
+
+    <!-- Main Image & Caption Area -->
+    <div class="max-w-5xl w-full max-h-[85vh] flex flex-col items-center justify-center relative z-20 px-8 sm:px-16"
+      onclick="event.stopPropagation()">
+      <div class="relative max-h-[75vh] flex items-center justify-center">
+        <img id="lightboxImage" src="" alt="Zoom preview"
+          class="max-w-full max-h-[75vh] object-contain rounded-lg shadow-2xl border border-zinc-800 transition-opacity duration-200" />
+      </div>
+      <p id="lightboxCaption"
+        class="mt-4 text-xs sm:text-sm font-mono text-zinc-300 text-center max-w-2xl px-4 leading-relaxed"></p>
+    </div>
+  </div>
+
+  <!-- FLOATING BACK TO TOP BUTTON -->
+  <button id="backToTopBtn" title="Return to top" aria-label="Return to top"
+    class="fixed bottom-6 right-6 p-3.5 rounded-full bg-zinc-900/90 text-zinc-300 hover:text-white hover:bg-zinc-800 border border-zinc-700 shadow-xl opacity-0 pointer-events-none transition-all duration-300 z-40 focus:outline-none focus:ring-2 focus:ring-orange-500">
+    <i class="fas fa-arrow-up text-sm"></i>
+  </button>
+
+  <!-- Core Scripts -->
+  <script src="js/scripts8.js"></script>
+</body>
+
+</html>
